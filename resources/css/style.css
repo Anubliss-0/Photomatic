@@ -204,10 +204,13 @@ header .mobile {
     background-color: transparent;
     border: none;
     margin: auto;
+    padding: 0%;
+    font-size: 10vw;
   }
 
   #sign-up-cta .content {
     margin-top: 0;
+    width: auto;
   }
 
   #sign-up-cta .email {
@@ -272,6 +275,7 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  
 }
 
 
@@ -313,8 +317,12 @@ header .mobile {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1.25rem 1rem 5% 1rem;
     line-height: 1.3;
+  }
+
+  .bttm {
+    padding-top: 0%;
   }
 
   .feature h2 {
@@ -419,7 +427,9 @@ header .mobile {
 #quotes-section {
   background-color: #f3f3f3;
   padding: 4rem 0;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #quotes-section content {
@@ -457,13 +467,17 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section .quote-citation {
-    display: block;
-    padding-top: 1rem;
-    margin: auto;
+  @media only screen and (max-width: 570px) {
+    #quotes-section {
+      flex-direction: column;
+    }
+
+    .photo-soc {
+      padding-top: 5%;
+    }
   }
 
-  
+    
 }
 
 /* Footer */
